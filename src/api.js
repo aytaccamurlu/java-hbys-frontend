@@ -15,6 +15,6 @@ export const appointmentService = {
     delete: (id) => axios.delete(`/api/appointments/${id}`)
 };
 export const authService = {
-    login: (credentials) => axios.post(`${API_URL}/login`, credentials),
-    register: (userData) => axios.post(`${API_URL}/register`, userData)
+    login: (credentials) => axios.post(`/api/login`, credentials),
+    register: (userData) => axios.post(`/api/register`, userData)
 };
